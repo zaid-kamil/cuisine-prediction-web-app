@@ -1,0 +1,37 @@
+{% extends 'theme.html' %}
+
+
+{% block body %}
+<div class="container-fluid" style="background: rgb(17, 17, 17);">
+        <div class="row ">
+                <div class="col-md-12 mt-2 ">
+                        <h1 class="display-1 text-center text-white">Cusine Prediction App</h1>
+                </div>
+        </div>
+</div>
+<div class="container">
+    
+    <div class="row align-items-center justify-content-center" style="height: 80vh;">
+        <div class="col-sm-8 mx-auto">
+           <div class="card">
+               <div class="card-body ">
+
+                   <h4 class="card-title text-center shadow-4">App can predict Cusine as following</h4>
+                   <p class=" lead">greek, southern_us, filipino, indian, jamaican, spanish, italian, mexican, chinese, british, thai, vietnamese, cajun_creole, brazilian, french, japanese, irish, korean, moroccan, russian</p>
+                   <a name="" id="" class="btn btn-outline-success btn-block" href="/try" role="button">Proceed <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block css %}
+<style>
+    body{
+        background-image:url('https://www.weightwatchers.com/us/sites/default/files/styles/wwvs_default_image/public/article_masthead/allaboutzeropointfoods_yk_ww_080218_0spvfoods_190_1250x600.jpg');
+        background-color: #2c2eaa !important;
+        background-size: cover;
+    }
+</style>
+{% endblock %}
+

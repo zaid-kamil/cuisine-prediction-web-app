@@ -1,0 +1,138 @@
+{% extends 'theme.html' %}
+
+
+{% block body %}
+
+<div class="container">
+    
+    <div class="row align-items-center justify-content-center" style="height: 90vh;">
+        
+        <div class="col-sm-5 mx-auto">
+            <div class="card">
+                <div class="card-header">Some Ingredients</div>
+                <div class="card-body">
+                    
+                    <p class="text-small">
+                        sugar,
+                        egg yolks,
+                        corn starch,
+                        cream of tartar,
+                        bananas,
+                        vanilla wafers,
+                        milk,
+                        vanilla extract,
+                        toasted pecans,
+                        egg whites,
+                        light rum,
+                        country ham,
+                        relish,
+                        freshly ground pepper,
+                        field peas,
+                        jalapeno chilies,
+                        all-purpose flour,
+                        garlic cloves,
+                        sliced green onions,
+                        baking powder,
+                        peanut oil,
+                        snaps,
+                        large eggs,
+                        buttermilk,
+                        long-grain rice,
+                        self-rising cornmeal
+                        ground black pepper,
+                        peas,
+                        cumin seed,
+                        cucumber,
+                        plain low-fat yogurt,
+                        peeled fresh ginger,
+                        garlic,
+                        garlic cloves,
+                        chopped cilantro fresh,
+                        kosher salt,
+                        legumes,
+                        freshly ground pepper,
+                        fresh lemon juice,
+                        basmati rice,
+                        jalapeno chilies,
+                        extra-virgin olive oil,
+                        scallions,
+                        chopped fresh mint
+                    </p>                
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 mx-auto">
+            <div class="card">
+                
+                <div class="card-body">
+                    <p class="card-text"><i class="fa fa-info-circle" aria-hidden="true"></i> Cusine Prediction</p>
+                    <form enctype="multipart/form-data" method="post">
+                        
+                        <div class="form-group">
+                            <label for="ingredients">Enter Ingredients</label>
+                            <textarea class=form-control name=ingredients id=ingredients rows=6 placeholder="sugar,egg yolks,corn starch,cream of tartar,bananas,vanilla wafers,milk,vanilla extract,toasted pecans,egg whites,light rum"></textarea>
+                            <p class="form-text text-muted">
+                                Enter ingredient names seperated with commas like
+                                <span class="badge">
+                                    click proceed to send data as JSON
+                                </span>
+                            </p>
+                        </div>
+                        <button  class="btn btn-outline-danger"><i class="fa fa-info-circle" aria-hidden="true"></i> Proceed</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-sm-11 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <code>
+                        [{
+                            "ingredients": [
+                            "baking powder",
+                            "eggs",
+                            "all-purpose flour",
+                            "raisins",
+                            "milk",
+                            "white sugar"
+                            ]
+                        }]
+                    </code>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <code>
+                        [{
+                          
+                            "ingredients": [
+                              "sugar",
+                              "egg yolks",
+                              "corn starch",
+                              "cream of tartar",
+                              "bananas",
+                              "vanilla wafers",
+                              "milk",
+                              "vanilla extract",
+                              "toasted pecans",
+                              "egg whites",
+                              "light rum"
+                            ]
+                          }]
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock %}
+    {% block css %}
+    <style>
+        body{
+            background:url('https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg') #2c2eaa !important;
+        }
+    </style>
+    {% endblock %}

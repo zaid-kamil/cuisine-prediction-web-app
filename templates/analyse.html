@@ -1,0 +1,43 @@
+{% extends 'theme.html' %}
+
+
+{% block body %}
+<div class="container">
+    
+    <div class="row align-items-center justify-content-center" style="height: 90vh;">
+        <div class="col-sm-12 mx-auto">
+            <div class="card">
+                
+                <div class="card-body">
+                    
+                    <p class="card-text text-center"></i>Cusine Predicted</p>
+                    <p class="lead ">
+                        <code>{{data|safe}}</code>
+                    </p>
+                    <div class="alert alert-success display-1 text-center lead" role="alert">
+                        <strong>{{out[0]|upper}}</strong>
+                    </div>
+                    
+                     
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
+
+{% block css %}
+<style>
+    body{
+            background:url('https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg') #2c2eaa !important;
+        }
+</style>
+{% endblock %}
+{% block js %}
+<script>
+$(document).ready(function () {
+  
+});
+</script>
+{% endblock %}
